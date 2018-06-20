@@ -1,0 +1,18 @@
+{namespace rhp=TmFrstn\FscFlexslider\ViewHelpers}
+<f:for each="{files}" as="file">
+	<li>
+		<f:if condition="{file.link}">
+			<f:then>
+				<f:link.typolink parameter="{file.link}">
+					<rhp:image image="{file}" height="{data.imageheight}" width="{data.imagewidth}" alt="{file.properties.alt}" title="{file.properties.title}"/>
+				</f:link.typolink>
+			</f:then>
+			<f:else>
+				<rhp:image image="{file}" alt="{file.properties.alt}" maxWidth="150" title="{file.properties.title}"/>
+			</f:else>
+		</f:if>
+		<f:if condition="{file.properties.description}">
+			<div class="fsc-flexslider-description">{file.properties.description}</div>
+		</f:if>
+	</li>
+</f:for>

@@ -1,0 +1,21 @@
+lib.fluidContent {
+	templateRootPaths {
+		150 = EXT:fsc_flexslider/Resources/Private/Templates
+	}
+	partialRootPaths {
+		150 = EXT:fsc_flexslider/Resources/Private/Partials
+	}
+}
+tt_content {
+	fsc_flexslider < lib.fluidContent
+	fsc_flexslider {
+		templateName = FscFlexslider
+		dataProcessing {
+			10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+			10 {
+				references.fieldName = assets
+			}
+			20 = TmFrstn\FscFlexslider\DataProcessing\FscFlexsliderProcessor
+		}
+	}
+}

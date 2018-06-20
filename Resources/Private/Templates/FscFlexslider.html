@@ -1,0 +1,26 @@
+<html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers">
+<div class="col-md-12">
+	<f:render partial="Header" arguments="{_all}" />
+	<div class="tx-ws-flexslider">
+		<div class="sliderLabel"><span class="center">Unsere Partner</span></div>
+		<ul id="logoSlider-{data.uid}" class="logo">
+				<f:render partial="DefaultSlider" arguments="{_all}" />
+		</ul>
+		<script type="text/javascript">
+			jQuery(document).ready(function(){
+				<![CDATA[
+				jQuery('#logoSlider-]]>{data.uid}<![CDATA[').bxSlider({
+					slideWidth: 150,
+					slideMargin: 5,
+					ticker: true,
+					speed: 30000,
+					tickerHover: true,
+					randomStart: true,
+          infiniteLoop:true
+				});
+				]]>
+			});
+		</script>
+	</div>
+</div>
+</html>

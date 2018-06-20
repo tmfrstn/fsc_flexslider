@@ -1,0 +1,16 @@
+# **************************************************
+# Add the slider to the "New Content Element Wizard"
+# **************************************************
+mod.wizards.newContentElement.wizardItems.common {
+	elements {
+		fsc_flexslider {
+			iconIdentifier = content-image
+			title = LLL:EXT:fsc_flexslider/Resources/Private/Language/locallang_be.xlf:wizard.title
+			description = LLL:EXT:fsc_flexslider/Resources/Private/Language/locallang_be.xlf:wizard.description
+			tt_content_defValues {
+				CType = fsc_flexslider
+			}
+		}
+	}
+	show := addToList(fsc_flexslider)
+}

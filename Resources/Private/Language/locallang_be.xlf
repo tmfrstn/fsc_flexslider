@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en"
+	      datatype="plaintext"
+	      original="messages"
+	      date="2016-01-04T14:17:23Z"
+	      product-name="fsc_flexslider">
+		<header/>
+		<body>
+
+			<trans-unit id="wizard.title">
+				<source>Flexslider</source>
+			</trans-unit>
+			<trans-unit id="wizard.description">
+				<source>Flexslider as Fluid Styled Content CE</source>
+			</trans-unit>
+			<trans-unit id="tca.tab.sliderElements">
+				<source>Slider Elements</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
