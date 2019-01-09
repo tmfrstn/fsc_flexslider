@@ -1,10 +1,13 @@
 lib.fluidContent {
 	templateRootPaths {
-		150 = EXT:fsc_flexslider/Resources/Private/Templates
+		100 = EXT:fsc_flexslider/Resources/Private/Templates
 	}
 	partialRootPaths {
-		150 = EXT:fsc_flexslider/Resources/Private/Partials
+		100 = EXT:fsc_flexslider/Resources/Private/Partials
 	}
+	layoutRootPaths {
+        100 = EXT:fsc_flexslider/Resources/Private/Layouts
+    }
 }
 tt_content {
 	fsc_flexslider < lib.fluidContent
